@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>じゃんけんプログラム</title>
+    </head>
+
+    <body>
+        <h1>じゃんけんプログラム</h1>
+        <p>以下のボタンから出す手を選んでください。（コンピューターの手はランダムに選択されます。）</p>
+        
+        <button type="button" onclick="rps(0)">グー</button>
+        <button type="button" onclick="rps(1)">チョキ</button>
+        <button type="button" onclick="rps(2)">パー</button>
+
+        <h2>じゃんけん結果</h2>
+        <div id="result1"></div>
+        <div id="result2"></div>
+    </body>
+
+    <script>
+        
+        function rps(playerHand) {
+            let rpsHand = ['グー','チョキ','パー'];
+            let enemyHand = Math.floor( Math.random() * 3);
+
+            if (enemyHand === playerHand) {
+                result_end = "【引き分け】です。";
+            } else if(playerHand === 0 && enemyHand === 1) {
+                result_end = "あなたの【勝ち！】です。";
+            } else if(playerHand === 1 && enemyHand === 2) {
+                result_end = "あなたの【勝ち！】です。";
+            } else if(playerHand === 2 && enemyHand === 0) {
+                result_end = "あなたの【勝ち！】です。";
+            } else {
+                result_end = "あなたの【負け】です。";
+            }
+
+            document.getElementById("result1").innerHTML = result_end;
+            document.getElementById("result2").innerHTML = "あなたは"+ rpsHand[playerHand] + "、コンピューターは" + rpsHand[enemyHand] +"を選択しました。";
+        }
+
+    </script>
+
+
+</html>
