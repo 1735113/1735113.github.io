@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body{
+    /* 文字サイズを変更するプロパティ */
+    font-size: 16px;
+
+    /* フォントの種類を指定するプロパティ */
+    font-family: "Hiragino kaku Gothic ProN" , "ヒラギノ角ゴ ProN" ,　Meiriyo, 
+}
+
+p {
+    /* 文字の色を変更するプロパティ */
+    /* RGB指定 黒は＃000000 / 白は#FFFFFF */
+    /* 後に書いたcolorが優先して表示される */
+    color: #000000;
+    color: #FFFFFF;
+    color: darkgreen;
+
+/* serif:明朝体系、sans-serif:ゴシック体系 */
+    font-family: serif;
+
+    /* 行の高さを表すプロパティ */
+    /* 単位は px, em(倍), rem, % */
+    line-height: 3em;
+
+    /* テキストの行揃いを指定するプロパティ */
+    text-align: center;
+    text-align: justify;
+}
+
+h1 {
+    /* テキストの配置を整えるプロパティ */
+    text-align: center;
+
+    /* テキストの背景を指定するプロパティ */
+    background-color: darkorange;
+
+    color: #FFFFFF;
+}
+
+div {
+    /* 背景画面を指定するプロパティ */
+    background-image: url(../../Assignment01/img/backgroundimage.jpg);
+
+    /* 画面背景の繰り返しを指定するプロパティ */
+    /* no-repeat:１回のみ、repear-x:横に連続、repeat-y:縦に連続 */
+    background-repeat: no-repeat;
+    
+    /* 背景画像のサイズの指定 */
+    background-size: 100%;
+    background-size: 500px 100px;
+}
+
+ul {
+    /* リストの行頭文字を変更するプロパティ */
+    list-style: none;
+}
