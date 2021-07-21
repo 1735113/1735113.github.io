@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>劇団四季を観に行こう</title>
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'rrx8jzz',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+</head>
+
+<body class="drawer drawer--left">
+    <header>
+        <div class="drawer-navbar" role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#program">program</a></li>
+                    <li><a href="#price">price</a></li>
+                    <li><a href="#access">access</a></li>
+                    <li><a href="#ticket">ticket</a></li>
+                    <li><a href="#qa">Q&amp;A</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <div class="logo">
+            <div class="title-wrap">
+                <p class="title1">劇団四季</p>
+                <p class="title2">を観に行こう</p>
+            </div>
+            
+            <div style="position:absolute; top: 150px; left:380px">
+                <img src="images/drive.png" alt="" width="170px" height="130px">
+            </div>
+            
+        </div>
+        
+    </header>
+
+    <section id="about">
+        <h4>about</h4>
+        <h2>劇団四季とは？</h2>
+        <div class="about-content-wrap">
+            <div class="about-content">
+                <img src="images/about_1.png" alt="" height="225px">
+                <h6>最大級の演劇集団</h6>
+                <p>劇団四季は、俳優・技術スタッフ・経営スタッフ総勢約1400名で構成された、世界的に最大規模の演劇集団です。日本国内に7つの専用劇場を持ち、年間の総公演回数は3000回以上、総観客数は300万人を超えます。</p>
+            </div>
+            <div class="about-content">
+                <img src="images/about_2.png" alt="" height="225">
+                <h6>実力主義</h6>
+                <p>「俳優は作品を輝かせるために存在する」という考えのもと、テレビや映画などで有名な俳優だからといってキャスティングすることはなく、実力のある俳優の中からオーディションを通じ、公平にキャストを決定します。</p>
+            </div>
+            <div class="about-content">
+                <img src="images/about_3.png" alt="" height="225">
+                <h6>幅広いレパートリー</h6>
+                <p>劇団四季はストレートプレイ（芝居）、オリジナルミュージカル、海外ミュージカル、ファミリーミュージカルなど幅広いレパートリーを上演しています。<a href="https://www.shiki.jp/group/company/performances.html" target="self">こちら</a>から劇団四季が2000年以降に上演した主な作品を見ることができます。
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="program">
+        <h4>program</h4>
+        <h2>誰とどんな作品を観る？</h2>
+        <div class="program-box">
+            <p class="program-intro">幅広いレパートリーの上演作品の中から、誰と一緒に観に行くかによって様々な作品を楽しむことができます。</p>
+            <div class="program-content-wrap">
+                <div class="program-content">
+                    <div class="program-content-row">
+                        <p>\ 家族との観劇におすすめ /</p>
+                        <p class="program-title">1. ライオンキング</p>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <div class="program-content-row">
+                        <p>\ 恋人との観劇におすすめ /</p>
+                        <p class="program-title">2. アラジン</p>
+                          
+                    </div>
+                </div>
+                <div class="program-content">
+                    <div class="program-content-row">
+                        <p>\ 友人との観劇におすすめ /</p>
+                        <p class="program-title">3. オペラ座の怪人</p> 
+                    </div>
+                </div>
+                <div class="program-content">
+                    <div class="program-content-row">
+                        <p>\ 1人での観劇におすすめ /</p>
+                        <p class="program-title">4. キャッツ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="price">
+        <div class="hexagon-wrap">
+            <div class="hexagon">
+                <h4>price</h4>
+                <h2>劇団四季のチケットはお手頃価格？</h2>
+                <p class="price-intro">料金設定は地域や作品など公演ごとに異なりますので、詳しい料金は各公演スケジュールの「座席料金」で確認しましょう！</p>
+                <div class="tab-all">
+                    <div class="tab-wrap">
+                        <p id="tab-control">
+                            <a href="#tab1">例1: アラジン</a>
+                            <a href="#tab2">例2：ライオンキング</a>
+                        </p>
+                        <div id="tab-body">
+                            <div id="tab1">
+                                <table>
+                                    <tr>
+                                        <th>座席</th>
+                                        <th>一般料金</th>
+                                        <th>子ども料金</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="seat_s">S席</td>
+                                        <td>12,100円</td>
+                                        <td>6,050円</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="seat_a">A席</td>
+                                        <td>8,800円</td>
+                                        <td>4,400円</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="seat_b">B席</td>
+                                        <td>6,600円</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="seat_c">C席</td>
+                                        <td>3,300円</td>
+                                        <td>-</td>
+                                      </tr>
+                                  </table>
+                                
+                            </div>
+                            <div id="tab2">
+                                <table>
+                                    <tr>
+                                        <th>座席</th>
+                                        <th>一般料金</th>
+                                        <th>子ども料金</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="seat_s">S席</td>
+                                        <td>12,650円</td>
+                                        <td>6,325円</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="seat_a">A席</td>
+                                        <td>10,450円</td>
+                                        <td>5,525円</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="seat_b">B席</td>
+                                        <td>7,150円</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="seat_c">C席</td>
+                                        <td>3,850円</td>
+                                        <td>-</td>
+                                      </tr>
+                                  </table>
+                            </div>
+                        </div>
+                        <p><br>※上記の表は東京公演の場合の料金表の例です。（消費税込み）</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="access">
+        <h4>access</h4>
+        <h2>全国各地でも観れるの？
+        </h2>
+        <p class="access-intro">専用劇場は東京・名古屋・大阪の計7ヶ所にあります。また、専用劇場以外にも京都や福岡などで上演しているので全国各地で観ることが出来ます。</p>
+        <div>
+        </div>
+        <div class="access-senyou-wrap">
+            <div class="access-senyou">
+                <div class="access-fukidashi">
+                    専用劇場
+                </div>
+                
+                <div class="access-content">
+                    <div>
+                        <hr width="700">
+                        <p class="access-name">JR東日本四季劇場［春］・JR東日本四季劇場［秋］・自由劇場</p>
+                        <p>〒105-0022<br>
+                            東京都港区海岸1-10-45</p>
+                        <hr width="700">
+                    </div>
+
+                    <div>
+                        <p class="access-name">電通四季劇場［海］</p>
+                        <p>〒105-0021<br>
+                            東京都港区東新橋1-8-2</p>
+                        <hr width="700">
+                    </div>
+
+                    <div>
+                        <p class="access-name">有明四季劇場</p>
+                        <p>〒135-0063<br>
+                            東京都江東区有明2丁目1-29</p>
+                        <hr width="700">
+                    </div>
+
+                    <div>
+                        <p class="access-name">名古屋四季劇場</p>
+                        <p>〒450-0003<br>
+                            愛知県名古屋市中村区名駅南2-11-11</p>
+                        <hr width="700">
+                    </div>
+
+                    <div>
+                        <p class="access-name">大阪四季劇場</p>
+                        <p>〒530-0001<br>
+                            大阪府大阪市北区梅田2-2-22 ハービスPLAZA ENT 7階</p>
+                        <hr width="700">
+                    </div>
+                </div>
+                <div class="access-fukidashi">
+                    その他劇場
+                </div>
+            </div>
+        </div>
+        <div class="access-sonota-flex">
+            <div class="access-sonota-wrap">
+                <p class="access-sonota">京都劇場（京都）／キャナルシティ劇場（福岡）　etc...</p>
+            </div>
+        </div>
+    </section>
+    <section id="schedule">
+        <h4>schedule</h4>
+        <h2>いつ上演されてるの？</h2>
+        <p class="schdule-intro">劇団四季では全国各地で様々な公演が上映されています。今すぐ上演中の公演をチェックして、上演スケジュールを確認しましょう！</p>
+        <div class="schedule-watch-flex">
+            <p class="schedule-watch">\ 今は何が観れるの？/</p>
+        </div>
+        <a href="https://www.shiki.jp/stage_schedule/lists/" target="self">上演中の公演を確認する</a>
+    </section>
+
+
+    <section id="ticket">
+        <h4>ticket</h4>
+        <h2>どうやってチケットを購入するの？</h2>
+        <p class="ticket-intro">チケットは劇団四季の公式HPやチケットぴあなどから簡単に買うことが出来ます。また、当日券の販売もあるので思い立ったらすぐに観に行くこともできます。</p>
+        <div class="ticket-way-wrap">
+
+            <div class="ticket-way">
+                <p class="ticket-title">ネット予約</p>
+                <div class="ticket-content">
+                    <p>劇団四季idセンター</p>
+                    <hr width="200" class="ticket-net-name">
+                    <p>チケットぴあ</p>
+                    <hr width="200" class="ticket-net-name">
+                    <p>ローチケ</p>
+                    <hr width="200" class="ticket-net-name"> 
+                </div>
+            </div>
+
+            <div class="ticket-way">
+                <p class="ticket-title">当日券</p>
+                <div class="ticket-shiki">
+                    <p class="ticket-call-name">ネット予約</p>
+                    <hr width="450">
+                    <p>販売期間：公演前日の午後7時から開演の2時間前まで。</p>
+                    <p>※全国公演は開演3時間前まで（劇団四季主催公演のみ取り扱い）。</p>
+                </div>
+                <div>
+                    <p class="ticket-call-name">窓口購入</p>
+                    <hr width="450">
+                    <p>販売期間：各劇場窓口の営業開始時間から開演時間まで。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="qa">
+        <h2>Q&amp;A</h2>
+        <div class="qa-content">
+            <div class="qa-content-q">
+                <p class="qa-q">Q</p>
+                <p class="qa-content-p">観劇の時は何を持って行ったらいいの？</p>
+            </div>
+            <div class="qa-content-a">
+                <p class="qa-a">A</p>
+                <p class="qa-content-p">チケット、ハンカチ、双眼鏡の3つを持っていきましょう。双眼鏡は無くても大丈夫ですが、双眼鏡があると俳優さんの細かい表情まで観ることができるのでオススメです。
+                    （劇場での貸し出し（有料）も行なっています。）</p>
+            </div>
+        </div>
+        <div class="qa-content">
+            <div class="qa-content-q">
+                <p class="qa-q">Q</p>
+                <p class="qa-content-p">どんな服装で観に行けばいいの？</p>
+            </div>
+            <div class="qa-content-a">
+                <p class="qa-a">A</p>
+                <p class="qa-content-p">ドレスコードはないのでカジュアルな格好で観に行って大丈夫です。でも、ウィンドブレーカーや、音や暗闇で光ったりする服装は避けましょう。</p>
+            </div>
+        </div>
+        <div class="qa-content">
+            <div class="qa-content-q">
+                <p class="qa-q">Q</p>
+                <p class="qa-content-p">休憩時間はどのように過ごすの？</p>
+            </div>
+            <div class="qa-content-a">
+                <p class="qa-a">A</p>
+                <p class="qa-content-p">過ごし方は自由です！1幕と2幕の間に休憩時間が約20分あるので、売店で公演プログラムやグッズを購入したり、ロビーで軽食をとったりご自身に合った過ごし方をしましょう！</p>
+            </div>
+        </div>
+    </section>
+    <footer>&copy; 2021 Ayumin, All Rights Researved.</footer>
+
+    <script>
+        var tabs = document.getElementById('tab-control').getElementsByTagName('a');
+        var pages = document.getElementById('tab-body').getElementsByTagName('div');
+
+        function changeTab() {
+            var targetid = this.href.substring(this.href.indexOf('#') + 1, this.href.length);
+
+            for (var i = 0; i < pages.length; i++) {
+                if (pages[i].id != targetid) {
+                    pages[i].style.display = "none";
+                } else {
+                    pages[i].style.display = "block";
+                }
+            }
+
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.zIndex = "0";
+            }
+            this.style.zIndex = "10";
+
+            return false;
+        }
+
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].onclick = changeTab;
+        }
+
+        tabs[0].onclick();
+
+
+        $(function() {
+            $('.drawer').drawer();
+        });
+    </script>
+
+
+</body></html>
